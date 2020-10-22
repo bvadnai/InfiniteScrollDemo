@@ -6,23 +6,30 @@
 //
 
 import UIKit
+import RxSwift
 
 protocol SceneCoordinatorProtocol {
-    func transition(to scene: Scene, type: SceneTransitionType, animated: Bool)
-    func pop(animated: Bool)
-    func dismiss(animated: Bool)
+    @discardableResult
+    func transition(to scene: Scene, type: SceneTransitionType, animated: Bool) -> Completable
+    @discardableResult
+    func pop(animated: Bool) -> Completable
+    @discardableResult
+    func dismiss(animated: Bool) -> Completable
 }
 
 extension SceneCoordinatorProtocol {
-    func transition(to scene: Scene, type: SceneTransitionType) {
-        transition(to: scene, type: type, animated: true)
+    @discardableResult
+    func transition(to scene: Scene, type: SceneTransitionType) -> Completable {
+        return transition(to: scene, type: type, animated: true)
     }
 
-    func pop() {
-        pop(animated: true)
+    @discardableResult
+    func pop() -> Completable {
+        return pop(animated: true)
     }
 
-    func dismiss() {
-        dismiss(animated: true)
+    @discardableResult
+    func dismiss() -> Completable {
+        return dismiss(animated: true)
     }
 }
