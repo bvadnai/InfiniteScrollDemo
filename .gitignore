@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,swift,objective-c
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,swift,objective-c
+# Created by https://www.toptal.com/developers/gitignore/api/macos,swift,objective-c,xcode
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,swift,objective-c,xcode
 
 ### macOS ###
 # General
@@ -150,4 +150,21 @@ Dependencies/
 # https://github.com/johnno1962/injectionforxcode
 
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,swift,objective-c
+### Xcode ###
+# Xcode
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+
+
+
+## Gcc Patch
+/*.gcno
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# End of https://www.toptal.com/developers/gitignore/api/macos,swift,objective-c,xcode
