@@ -180,6 +180,7 @@
 				1D5D41A0254218D0002A7105 /* Sources */,
 				1D5D41A1254218D0002A7105 /* Frameworks */,
 				1D5D41A2254218D0002A7105 /* Resources */,
+				0525DE008C8EC5C8847A5845 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +236,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0525DE008C8EC5C8847A5845 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteScrollDemo/Pods-InfiniteScrollDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteScrollDemo/Pods-InfiniteScrollDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteScrollDemo/Pods-InfiniteScrollDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1D59F8C825422A1E0008EB03 /* Linter */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

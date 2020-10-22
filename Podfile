@@ -4,4 +4,5 @@ inhibit_all_warnings!
 target 'InfiniteScrollDemo' do
   use_frameworks!
   pod 'SwiftLint'
+  pod 'Then'
 end
