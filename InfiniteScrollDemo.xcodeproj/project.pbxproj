@@ -10,6 +10,8 @@
 		1D59F8CE25422E8E0008EB03 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F8CD25422E8E0008EB03 /* UIColor.swift */; };
 		1D59F8D125422FAB0008EB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D59F8D025422FAB0008EB03 /* LaunchScreen.storyboard */; };
 		1D59F8E62542315A0008EB03 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F8E52542315A0008EB03 /* Repository.swift */; };
+		1D59F8EA254232D30008EB03 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F8E9254232D30008EB03 /* ListViewModel.swift */; };
+		1D59F8EF2542338D0008EB03 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F8EE2542338D0008EB03 /* BindableType.swift */; };
 		1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D41A7254218D0002A7105 /* AppDelegate.swift */; };
 		1D5D41B1254218D2002A7105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D41B0254218D2002A7105 /* Assets.xcassets */; };
 		1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694C25422052003D0282 /* SceneTransitionType.swift */; };
@@ -28,6 +30,8 @@
 		1D59F8CD25422E8E0008EB03 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		1D59F8D025422FAB0008EB03 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D59F8E52542315A0008EB03 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1D59F8E9254232D30008EB03 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		1D59F8EE2542338D0008EB03 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		1D5D41A4254218D0002A7105 /* InfiniteScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5D41A7254218D0002A7105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5D41B0254218D2002A7105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +79,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1D59F8E8254232B50008EB03 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1D59F8E9254232D30008EB03 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		1D5D419B254218D0002A7105 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 				1DED694B25422025003D0282 /* Scenes */,
 				1DED69562542209F003D0282 /* Views */,
 				1D59F8E4254231270008EB03 /* Models */,
+				1D59F8E8254232B50008EB03 /* ViewModels */,
 				1DED696525422219003D0282 /* Extensions */,
 				1D59F8CB25422D650008EB03 /* Resources */,
 				1DED694625421F5C003D0282 /* Supporting Files */,
@@ -141,6 +154,7 @@
 			children = (
 				1DED6958254220BC003D0282 /* ViewController.swift */,
 				1DED695B254220F3003D0282 /* NavigationController.swift */,
+				1D59F8EE2542338D0008EB03 /* BindableType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -320,6 +334,8 @@
 				1DED695F2542214D003D0282 /* main.swift in Sources */,
 				1D59F8CE25422E8E0008EB03 /* UIColor.swift in Sources */,
 				1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */,
+				1D59F8EA254232D30008EB03 /* ListViewModel.swift in Sources */,
+				1D59F8EF2542338D0008EB03 /* BindableType.swift in Sources */,
 				1DED6959254220BC003D0282 /* ViewController.swift in Sources */,
 				1DED695225422053003D0282 /* SceneCoordinatorProtocol.swift in Sources */,
 				1D59F8E62542315A0008EB03 /* Repository.swift in Sources */,

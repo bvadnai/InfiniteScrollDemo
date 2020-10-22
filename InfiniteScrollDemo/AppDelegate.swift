@@ -15,7 +15,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         sceneCoordinator = SceneCoordinator(window: window!)
-        sceneCoordinator.transition(to: .list, type: .root, animated: false)
+        let viewModel = ListViewModel()
+        sceneCoordinator.transition(to: .list(viewModel), type: .root, animated: false)
         return true
     }
 }
