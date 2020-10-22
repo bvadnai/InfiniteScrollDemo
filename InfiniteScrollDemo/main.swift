@@ -7,6 +7,7 @@
 
 import UIKit
 import Then
+import NSObject_Rx
 
 UIApplicationMain(
     CommandLine.argc,

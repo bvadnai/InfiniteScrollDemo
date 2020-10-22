@@ -5,4 +5,10 @@ target 'InfiniteScrollDemo' do
   use_frameworks!
   pod 'SwiftLint'
   pod 'Then'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'NSObject+Rx'
+  pod 'RxSwiftExt'
+  pod 'Action'
 end
