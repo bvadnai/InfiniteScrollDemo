@@ -151,7 +151,6 @@
 				E5C585350DC53711D1E3332F /* Pods-InfiniteScrollDemo.debug.xcconfig */,
 				E376B626C2F45669CDDFC39E /* Pods-InfiniteScrollDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -163,6 +162,7 @@
 			buildConfigurationList = 1D5D41B8254218D2002A7105 /* Build configuration list for PBXNativeTarget "InfiniteScrollDemo" */;
 			buildPhases = (
 				EEB266383CBB106A92BF31FD /* [CP] Check Pods Manifest.lock */,
+				1D59F8C825422A1E0008EB03 /* Linter */,
 				1D5D41A0254218D0002A7105 /* Sources */,
 				1D5D41A1254218D0002A7105 /* Frameworks */,
 				1D5D41A2254218D0002A7105 /* Resources */,
@@ -220,6 +220,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D59F8C825422A1E0008EB03 /* Linter */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Linter;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		EEB266383CBB106A92BF31FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
