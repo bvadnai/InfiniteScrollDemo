@@ -12,14 +12,12 @@ opt_in_rules:
   - private_outlet
   - switch_case_on_newline
   - redundant_nil_coalescing
-  - let_var_whitespace
   - multiline_arguments
   - multiline_parameters
   - no_extension_access_modifier
   - attributes
   - operator_usage_whitespace
   - strict_fileprivate
-  - trailing_whitespace
   - trailing_newline
 
 # excluded and included are ignored for nested configurations.
@@ -91,6 +89,18 @@ trailing_semicolon:
   severity: error
 
 trailing_whitespace:
+  severity: error
+
+unneeded_break_in_switch:
+  severity: error
+
+unused_closure_parameter:
+  severity: error
+
+unused_private_declaration:
+  severity: error
+
+vertical_parameter_alignment:
   severity: error
 
 custom_rules:
