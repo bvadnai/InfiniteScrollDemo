@@ -2,7 +2,12 @@ PODS:
   - Action (4.2.0):
     - RxCocoa (< 7.0, >= 5.0)
     - RxSwift (< 7.0, >= 5.0)
+  - Alamofire (5.3.0)
   - Differentiator (4.0.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
   - "NSObject+Rx (5.1.0)":
     - RxSwift (~> 5.1)
   - RxCocoa (5.1.1):
@@ -24,22 +29,27 @@ PODS:
     - RxCocoa (~> 5.0)
     - RxSwiftExt/Core
   - SwiftLint (0.40.3)
+  - SwiftyJSON (5.0.0)
   - Then (2.7.0)
 
 DEPENDENCIES:
   - Action
+  - Moya
   - "NSObject+Rx"
   - RxCocoa
   - RxDataSources
   - RxSwift
   - RxSwiftExt
   - SwiftLint
+  - SwiftyJSON
   - Then
 
 SPEC REPOS:
   trunk:
     - Action
+    - Alamofire
     - Differentiator
+    - Moya
     - "NSObject+Rx"
     - RxCocoa
     - RxDataSources
@@ -47,11 +57,14 @@ SPEC REPOS:
     - RxSwift
     - RxSwiftExt
     - SwiftLint
+    - SwiftyJSON
     - Then
 
 SPEC CHECKSUMS:
   Action: 5dc2194f7a0b77857c82a677b0da655f197c005f
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
@@ -59,8 +72,9 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 5bdd9f7e93c6b9808475db9c5d714e22222b5d60
+PODFILE CHECKSUM: 10cfbfe55de598c564054b58772f6ae4e9060c95
 
 COCOAPODS: 1.10.0

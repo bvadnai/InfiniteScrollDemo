@@ -11,4 +11,6 @@ target 'InfiniteScrollDemo' do
   pod 'NSObject+Rx'
   pod 'RxSwiftExt'
   pod 'Action'
+  pod 'Moya'
+  pod 'SwiftyJSON'
 end
