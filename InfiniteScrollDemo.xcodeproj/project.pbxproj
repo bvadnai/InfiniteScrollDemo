@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D59F8CE25422E8E0008EB03 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F8CD25422E8E0008EB03 /* UIColor.swift */; };
 		1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D41A7254218D0002A7105 /* AppDelegate.swift */; };
 		1D5D41B1254218D2002A7105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D41B0254218D2002A7105 /* Assets.xcassets */; };
 		1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694C25422052003D0282 /* SceneTransitionType.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D59F8CD25422E8E0008EB03 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		1D5D41A4254218D0002A7105 /* InfiniteScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5D41A7254218D0002A7105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5D41B0254218D2002A7105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				1DED6969254222B7003D0282 /* DispatchQueue.swift */,
+				1D59F8CD25422E8E0008EB03 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				1DED6963254221E3003D0282 /* ListViewController.swift in Sources */,
 				1DED695325422053003D0282 /* Scene.swift in Sources */,
 				1DED695F2542214D003D0282 /* main.swift in Sources */,
+				1D59F8CE25422E8E0008EB03 /* UIColor.swift in Sources */,
 				1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */,
 				1DED6959254220BC003D0282 /* ViewController.swift in Sources */,
 				1DED695225422053003D0282 /* SceneCoordinatorProtocol.swift in Sources */,
