@@ -52,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D59F8CB25422D650008EB03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D5D41B0254218D2002A7105 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1D5D419B254218D0002A7105 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +86,8 @@
 				1DED694B25422025003D0282 /* Scenes */,
 				1DED69562542209F003D0282 /* Views */,
 				1DED696525422219003D0282 /* Extensions */,
+				1D59F8CB25422D650008EB03 /* Resources */,
 				1DED694625421F5C003D0282 /* Supporting Files */,
-				1D5D41B0254218D2002A7105 /* Assets.xcassets */,
 			);
 			path = InfiniteScrollDemo;
 			sourceTree = "<group>";
