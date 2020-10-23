@@ -6,5 +6,10 @@
 //
 
 import Foundation
+import RxSwift
+import Action
 
-protocol ListViewModelProtocol {}
+protocol ListViewModelProtocol: class {
+    var list: BehaviorSubject<[Repository]> { get }
+    var loadMoreReposAction: Action<Void, [Repository]> { get }
+}

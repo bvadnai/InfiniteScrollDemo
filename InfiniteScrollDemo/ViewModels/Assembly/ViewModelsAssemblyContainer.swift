@@ -10,8 +10,8 @@ import Swinject
 
 final class ViewModelsAssemblyContainer: Assembly {
     func assemble(container: Container) {
-        container.register(ListViewModelProtocol.self) { _ in
-            ListViewModel()
+        container.register(ListViewModelProtocol.self) { resolver in
+            ListViewModel(repositoriesService: resolver.resolve(RepositoriesServiceProtocol.self)!)
         }
     }
 }
