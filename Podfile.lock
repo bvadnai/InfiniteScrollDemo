@@ -10,6 +10,7 @@ PODS:
     - Alamofire (~> 5.0)
   - "NSObject+Rx (5.1.0)":
     - RxSwift (~> 5.1)
+  - Reachability (3.2)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - Action
   - Moya
   - "NSObject+Rx"
+  - Reachability
   - RxCocoa
   - RxDataSources
   - RxSwift
@@ -51,6 +53,7 @@ SPEC REPOS:
     - Differentiator
     - Moya
     - "NSObject+Rx"
+    - Reachability
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -66,6 +69,7 @@ SPEC CHECKSUMS:
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
@@ -75,6 +79,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 10cfbfe55de598c564054b58772f6ae4e9060c95
+PODFILE CHECKSUM: 923ccd7391afe3cb09b8ba552b15a33f8f60c4d9
 
 COCOAPODS: 1.10.0

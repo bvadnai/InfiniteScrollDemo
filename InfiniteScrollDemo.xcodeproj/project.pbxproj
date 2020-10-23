@@ -24,6 +24,7 @@
 		1D59F92425423D4D0008EB03 /* ReachabilityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92325423D4D0008EB03 /* ReachabilityType.swift */; };
 		1D59F92925423DA70008EB03 /* RepositoriesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */; };
 		1D59F92D254241250008EB03 /* CustomParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92C254241250008EB03 /* CustomParameterEncoding.swift */; };
+		1D59F940254246710008EB03 /* Reachability+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F93F254246710008EB03 /* Reachability+Rx.swift */; };
 		1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D41A7254218D0002A7105 /* AppDelegate.swift */; };
 		1D5D41B1254218D2002A7105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D41B0254218D2002A7105 /* Assets.xcassets */; };
 		1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694C25422052003D0282 /* SceneTransitionType.swift */; };
@@ -56,6 +57,7 @@
 		1D59F92325423D4D0008EB03 /* ReachabilityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityType.swift; sourceTree = "<group>"; };
 		1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesServiceProtocol.swift; sourceTree = "<group>"; };
 		1D59F92C254241250008EB03 /* CustomParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParameterEncoding.swift; sourceTree = "<group>"; };
+		1D59F93F254246710008EB03 /* Reachability+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reachability+Rx.swift"; sourceTree = "<group>"; };
 		1D5D41A4254218D0002A7105 /* InfiniteScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5D41A7254218D0002A7105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5D41B0254218D2002A7105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				1D59F90A25423AC40008EB03 /* MoyaProvider+Rx.swift */,
 				1D59F90D25423B000008EB03 /* Observable+Response.swift */,
 				1D59F91025423B160008EB03 /* Single+Response.swift */,
+				1D59F93F254246710008EB03 /* Reachability+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				1D59F91925423CC90008EB03 /* ApiError.swift in Sources */,
 				1D59F8EF2542338D0008EB03 /* BindableType.swift in Sources */,
 				1D59F91425423C670008EB03 /* Constants.swift in Sources */,
+				1D59F940254246710008EB03 /* Reachability+Rx.swift in Sources */,
 				1DED6959254220BC003D0282 /* ViewController.swift in Sources */,
 				1DED695225422053003D0282 /* SceneCoordinatorProtocol.swift in Sources */,
 				1D59F8E62542315A0008EB03 /* Repository.swift in Sources */,

@@ -13,4 +13,5 @@ target 'InfiniteScrollDemo' do
   pod 'Action'
   pod 'Moya'
   pod 'SwiftyJSON'
+  pod 'Reachability'
 end
