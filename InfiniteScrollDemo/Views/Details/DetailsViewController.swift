@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DetailsViewController: UIViewController, BindableType {
+final class DetailsViewController: ViewController, BindableType {
     // MARK: - Properties
 
     typealias ViewModelType = DetailsViewModelProtocol

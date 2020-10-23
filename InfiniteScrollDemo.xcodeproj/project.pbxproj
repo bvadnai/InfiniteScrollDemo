@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D26E9AF25427698008597B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26E9AE25427698008597B6 /* ViewController.swift */; };
 		1D59F8CE25422E8E0008EB03 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F8CD25422E8E0008EB03 /* UIColor.swift */; };
 		1D59F8D125422FAB0008EB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D59F8D025422FAB0008EB03 /* LaunchScreen.storyboard */; };
 		1D59F8E62542315A0008EB03 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F8E52542315A0008EB03 /* Repository.swift */; };
@@ -50,7 +51,6 @@
 		1DED695125422053003D0282 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694D25422053003D0282 /* SceneCoordinator.swift */; };
 		1DED695225422053003D0282 /* SceneCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694E25422053003D0282 /* SceneCoordinatorProtocol.swift */; };
 		1DED695325422053003D0282 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694F25422053003D0282 /* Scene.swift */; };
-		1DED6959254220BC003D0282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED6958254220BC003D0282 /* ViewController.swift */; };
 		1DED695C254220F3003D0282 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED695B254220F3003D0282 /* NavigationController.swift */; };
 		1DED695F2542214D003D0282 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED695E2542214D003D0282 /* main.swift */; };
 		1DED6963254221E3003D0282 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED6962254221E3003D0282 /* ListViewController.swift */; };
@@ -59,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D26E9AE25427698008597B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D59F8CD25422E8E0008EB03 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		1D59F8D025422FAB0008EB03 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D59F8E52542315A0008EB03 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		1DED694D25422053003D0282 /* SceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		1DED694E25422053003D0282 /* SceneCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		1DED694F25422053003D0282 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
-		1DED6958254220BC003D0282 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DED695B254220F3003D0282 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		1DED695E2542214D003D0282 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1DED6962254221E3003D0282 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -325,7 +325,7 @@
 		1DED6957254220A5003D0282 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				1DED6958254220BC003D0282 /* ViewController.swift */,
+				1D26E9AE25427698008597B6 /* ViewController.swift */,
 				1DED695B254220F3003D0282 /* NavigationController.swift */,
 				1D59F8EE2542338D0008EB03 /* BindableType.swift */,
 				1DAFE8552542522700FAB11C /* ReusableView.swift */,
@@ -537,6 +537,7 @@
 				1D59F98925424FAE0008EB03 /* UIFont.swift in Sources */,
 				1D59F8EA254232D30008EB03 /* ListViewModel.swift in Sources */,
 				1D59F8F52542395B0008EB03 /* Logger.swift in Sources */,
+				1D26E9AF25427698008597B6 /* ViewController.swift in Sources */,
 				1DAFE862254253BE00FAB11C /* DetailsView.swift in Sources */,
 				1D59F97C25424F190008EB03 /* ListView.swift in Sources */,
 				1D59F90E25423B000008EB03 /* Observable+Response.swift in Sources */,
@@ -544,7 +545,6 @@
 				1D59F8EF2542338D0008EB03 /* BindableType.swift in Sources */,
 				1D59F91425423C670008EB03 /* Constants.swift in Sources */,
 				1D59F940254246710008EB03 /* Reachability+Rx.swift in Sources */,
-				1DED6959254220BC003D0282 /* ViewController.swift in Sources */,
 				1DAFE86F2542548700FAB11C /* NavigationViewModelProtocol.swift in Sources */,
 				1DAFE8562542522700FAB11C /* ReusableView.swift in Sources */,
 				1DAFE853254251EA00FAB11C /* UITableView.swift in Sources */,

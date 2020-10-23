@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class ListViewController: UIViewController, BindableType {
+final class ListViewController: ViewController, BindableType {
     // MARK: - Properties
 
     typealias ViewModelType = ListViewModelProtocol

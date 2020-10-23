@@ -40,10 +40,15 @@ final class ListView: UIView {
 
     private func setupConstraints() {
         tableView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(LayoutSize.pt26)
+            if #available(iOS 11, *) {
+                $0.top.equalTo(safeAreaLayoutGuide.snp.topMargin)
+                $0.bottom.equalTo(safeAreaLayoutGuide.snp.bottomMargin)
+            } else {
+                $0.top.equalToSuperview().offset(LayoutSize.pt26)
+                $0.bottom.equalToSuperview()
+            }
             $0.left.equalToSuperview().offset(LayoutSize.pt24)
             $0.right.equalToSuperview().offset(-LayoutSize.pt24)
-            $0.bottom.equalToSuperview()
         }
     }
 }
