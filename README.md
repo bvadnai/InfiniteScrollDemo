@@ -6,4 +6,4 @@ With this app you can sweep through all the Swift repositories on GitHub, ordere
 The challenge is to make this scrolling experience as smooth as possible, considering the [cap on GitHub's Search API](https://developer.github.com/v3/search/#rate-limit) and other limitations.
 
 ### Before you run the app
-Make sure you've replaced the placeholder with your access token [here](https://github.com/bvadnai/InfiniteScrollDemo/blob/5fe914923b6fe28e5dc0607d981130dcaa0e9d3b/InfiniteScrollDemo/Services/Networking/Implementation/GitHubSearch.swift#L13). I made a syntax error deliberately so you don't have to search for it.
+Make sure you've replaced the placeholder with your access token [here](https://github.com/bvadnai/InfiniteScrollDemo/blob/5fe914923b6fe28e5dc0607d981130dcaa0e9d3b/InfiniteScrollDemo/Services/Networking/Implementation/GitHubSearch.swift#L13). I left a syntax error in that line deliberately, so you won't have to search across the project for it.
