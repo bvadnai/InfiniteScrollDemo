@@ -271,7 +271,7 @@ final class DetailsView: UIView {
     ) {
         nameLabel.text = name
         fullNameLabel.text = fullName
-        avatarView.load(url: avatarURL)
+        DispatchQueue.global(qos: .userInteractive).async(execute: avatarView.load(url: avatarURL))
         scoreLabel.text = "\(score)"
         descriptionLabel.text = description
         forksCountLabel.text = "\(forksCount)"

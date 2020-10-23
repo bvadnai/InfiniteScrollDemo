@@ -54,6 +54,8 @@ final class ListCell: UITableViewCell {
         $0.lineBreakMode = .byWordWrapping
     }
 
+    private var avatarLoading: DispatchWorkItem?
+
     // MARK: - Initialization
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -121,6 +123,13 @@ final class ListCell: UITableViewCell {
         idLabel.text = "ID \(id)"
         nameLabel.text = name
         fullNameLabel.text = fullName
-        avatarView.load(url: avatarURL)
+        avatarLoading = avatarView.load(url: avatarURL)
+        DispatchQueue.global().async(execute: avatarLoading!)
+    }
+
+    override func prepareForReuse() {
+        avatarLoading?.cancel()
+
+        super.prepareForReuse()
     }
 }
