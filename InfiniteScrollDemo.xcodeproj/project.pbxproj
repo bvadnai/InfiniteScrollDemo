@@ -31,6 +31,9 @@
 		1D59F961254249000008EB03 /* ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F960254249000008EB03 /* ListViewModelProtocol.swift */; };
 		1D59F964254249650008EB03 /* ServicesAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F963254249650008EB03 /* ServicesAssemblyContainer.swift */; };
 		1D59F967254249900008EB03 /* DefaultReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F966254249900008EB03 /* DefaultReachability.swift */; };
+		1D59F98525424F9A0008EB03 /* Helvetica-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D59F98325424F9A0008EB03 /* Helvetica-Bold.ttf */; };
+		1D59F98625424F9A0008EB03 /* Helvetica.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D59F98425424F9A0008EB03 /* Helvetica.ttf */; };
+		1D59F98925424FAE0008EB03 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F98825424FAE0008EB03 /* UIFont.swift */; };
 		1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D41A7254218D0002A7105 /* AppDelegate.swift */; };
 		1D5D41B1254218D2002A7105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D41B0254218D2002A7105 /* Assets.xcassets */; };
 		1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694C25422052003D0282 /* SceneTransitionType.swift */; };
@@ -70,6 +73,9 @@
 		1D59F960254249000008EB03 /* ListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelProtocol.swift; sourceTree = "<group>"; };
 		1D59F963254249650008EB03 /* ServicesAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssemblyContainer.swift; sourceTree = "<group>"; };
 		1D59F966254249900008EB03 /* DefaultReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReachability.swift; sourceTree = "<group>"; };
+		1D59F98325424F9A0008EB03 /* Helvetica-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Bold.ttf"; sourceTree = "<group>"; };
+		1D59F98425424F9A0008EB03 /* Helvetica.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Helvetica.ttf; sourceTree = "<group>"; };
+		1D59F98825424FAE0008EB03 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		1D5D41A4254218D0002A7105 /* InfiniteScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5D41A7254218D0002A7105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5D41B0254218D2002A7105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 		1D59F8CB25422D650008EB03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1D59F98225424F7C0008EB03 /* Fonts */,
 				1D5D41B0254218D2002A7105 /* Assets.xcassets */,
 				1D59F8D025422FAB0008EB03 /* LaunchScreen.storyboard */,
 			);
@@ -189,6 +196,15 @@
 				1D59F95D254248AD0008EB03 /* ViewModelsAssemblyContainer.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1D59F98225424F7C0008EB03 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1D59F98325424F9A0008EB03 /* Helvetica-Bold.ttf */,
+				1D59F98425424F9A0008EB03 /* Helvetica.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		1D5D419B254218D0002A7105 = {
@@ -285,6 +301,7 @@
 				1D59F90D25423B000008EB03 /* Observable+Response.swift */,
 				1D59F91025423B160008EB03 /* Single+Response.swift */,
 				1D59F93F254246710008EB03 /* Reachability+Rx.swift */,
+				1D59F98825424FAE0008EB03 /* UIFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -366,7 +383,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D59F98525424F9A0008EB03 /* Helvetica-Bold.ttf in Resources */,
 				1D5D41B1254218D2002A7105 /* Assets.xcassets in Resources */,
+				1D59F98625424F9A0008EB03 /* Helvetica.ttf in Resources */,
 				1D59F8D125422FAB0008EB03 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +475,7 @@
 				1D59F8CE25422E8E0008EB03 /* UIColor.swift in Sources */,
 				1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */,
 				1D59F961254249000008EB03 /* ListViewModelProtocol.swift in Sources */,
+				1D59F98925424FAE0008EB03 /* UIFont.swift in Sources */,
 				1D59F8EA254232D30008EB03 /* ListViewModel.swift in Sources */,
 				1D59F8F52542395B0008EB03 /* Logger.swift in Sources */,
 				1D59F90E25423B000008EB03 /* Observable+Response.swift in Sources */,
