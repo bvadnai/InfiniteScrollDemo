@@ -24,6 +24,7 @@ opt_in_rules:
 included: # paths to include during linting. `--path` is ignored if present.
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
+  - InfiniteScrollDemo/Extensions
 
 disabled_rules: # rule identifiers to exclude from running
   - force_cast
