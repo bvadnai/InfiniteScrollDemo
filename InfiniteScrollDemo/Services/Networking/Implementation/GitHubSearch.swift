@@ -8,7 +8,9 @@
 import Foundation
 import Moya
 
-private let accessToken = "***REMOVED***"
+// TODO: - Your private GitHub access token goes here.
+
+private let accessToken = ***REMOVED***
 
 enum GitHubSearch {
     case repositories(query: String, sort: String, order: String, page: Int, perPage: Int)
