@@ -1,4 +1,7 @@
 # Infinite scroll
+
+![example gif](https://raw.githubusercontent.com/bvadnai/InfiniteScrollDemo/main/example.gif)
+
 With this app you can sweep through all the Swift repositories on GitHub, ordered by popularity, i.e. the one with the most stars will be sitting at the top. Instead of displaying the API responses with the standard [pagination](https://developer.github.com/v3/#pagination), the content of the list changes dynamically, thus creating the perception of endless scrolling.
 The challenge is to make this scrolling experience as smooth as possible, considering the [cap on GitHub's Search API](https://developer.github.com/v3/search/#rate-limit) and other limitations.
 
