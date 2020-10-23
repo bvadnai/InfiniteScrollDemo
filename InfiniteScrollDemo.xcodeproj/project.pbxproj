@@ -17,6 +17,12 @@
 		1D59F90B25423AC40008EB03 /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F90A25423AC40008EB03 /* MoyaProvider+Rx.swift */; };
 		1D59F90E25423B000008EB03 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F90D25423B000008EB03 /* Observable+Response.swift */; };
 		1D59F91125423B160008EB03 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F91025423B160008EB03 /* Single+Response.swift */; };
+		1D59F91425423C670008EB03 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F91325423C670008EB03 /* Constants.swift */; };
+		1D59F91925423CC90008EB03 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F91825423CC90008EB03 /* ApiError.swift */; };
+		1D59F91D25423D000008EB03 /* GitHubSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F91C25423D000008EB03 /* GitHubSearch.swift */; };
+		1D59F92125423D260008EB03 /* MoyaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92025423D260008EB03 /* MoyaEndpoint.swift */; };
+		1D59F92425423D4D0008EB03 /* ReachabilityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92325423D4D0008EB03 /* ReachabilityType.swift */; };
+		1D59F92925423DA70008EB03 /* RepositoriesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */; };
 		1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D41A7254218D0002A7105 /* AppDelegate.swift */; };
 		1D5D41B1254218D2002A7105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D41B0254218D2002A7105 /* Assets.xcassets */; };
 		1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694C25422052003D0282 /* SceneTransitionType.swift */; };
@@ -42,6 +48,12 @@
 		1D59F90A25423AC40008EB03 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
 		1D59F90D25423B000008EB03 /* Observable+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
 		1D59F91025423B160008EB03 /* Single+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
+		1D59F91325423C670008EB03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1D59F91825423CC90008EB03 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		1D59F91C25423D000008EB03 /* GitHubSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearch.swift; sourceTree = "<group>"; };
+		1D59F92025423D260008EB03 /* MoyaEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaEndpoint.swift; sourceTree = "<group>"; };
+		1D59F92325423D4D0008EB03 /* ReachabilityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityType.swift; sourceTree = "<group>"; };
+		1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesServiceProtocol.swift; sourceTree = "<group>"; };
 		1D5D41A4254218D0002A7105 /* InfiniteScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5D41A7254218D0002A7105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5D41B0254218D2002A7105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,8 +113,37 @@
 			isa = PBXGroup;
 			children = (
 				1D59F8F42542395B0008EB03 /* Logger.swift */,
+				1D59F91325423C670008EB03 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1D59F91625423C980008EB03 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1D59F91725423CAF0008EB03 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1D59F91725423CAF0008EB03 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1D59F91825423CC90008EB03 /* ApiError.swift */,
+				1D59F92325423D4D0008EB03 /* ReachabilityType.swift */,
+				1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */,
+				1D59F91B25423CF20008EB03 /* Implementation */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1D59F91B25423CF20008EB03 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				1D59F91C25423D000008EB03 /* GitHubSearch.swift */,
+				1D59F92025423D260008EB03 /* MoyaEndpoint.swift */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		1D5D419B254218D0002A7105 = {
@@ -132,6 +173,7 @@
 				1DED69562542209F003D0282 /* Views */,
 				1D59F8E4254231270008EB03 /* Models */,
 				1D59F8E8254232B50008EB03 /* ViewModels */,
+				1D59F91625423C980008EB03 /* Services */,
 				1DED696525422219003D0282 /* Extensions */,
 				1D59F8CB25422D650008EB03 /* Resources */,
 				1DED694625421F5C003D0282 /* Supporting Files */,
@@ -348,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D59F92925423DA70008EB03 /* RepositoriesServiceProtocol.swift in Sources */,
 				1D59F90B25423AC40008EB03 /* MoyaProvider+Rx.swift in Sources */,
 				1DED695125422053003D0282 /* SceneCoordinator.swift in Sources */,
 				1D59F8F9254239B20008EB03 /* UINavigationController+Rx.swift in Sources */,
@@ -362,11 +405,16 @@
 				1D59F8EA254232D30008EB03 /* ListViewModel.swift in Sources */,
 				1D59F8F52542395B0008EB03 /* Logger.swift in Sources */,
 				1D59F90E25423B000008EB03 /* Observable+Response.swift in Sources */,
+				1D59F91925423CC90008EB03 /* ApiError.swift in Sources */,
 				1D59F8EF2542338D0008EB03 /* BindableType.swift in Sources */,
+				1D59F91425423C670008EB03 /* Constants.swift in Sources */,
 				1DED6959254220BC003D0282 /* ViewController.swift in Sources */,
 				1DED695225422053003D0282 /* SceneCoordinatorProtocol.swift in Sources */,
 				1D59F8E62542315A0008EB03 /* Repository.swift in Sources */,
+				1D59F92425423D4D0008EB03 /* ReachabilityType.swift in Sources */,
+				1D59F91D25423D000008EB03 /* GitHubSearch.swift in Sources */,
 				1D59F91125423B160008EB03 /* Single+Response.swift in Sources */,
+				1D59F92125423D260008EB03 /* MoyaEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
