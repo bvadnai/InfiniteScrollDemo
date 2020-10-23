@@ -41,6 +41,7 @@
 		1DAFE853254251EA00FAB11C /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFE852254251EA00FAB11C /* UITableView.swift */; };
 		1DAFE8562542522700FAB11C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFE8552542522700FAB11C /* ReusableView.swift */; };
 		1DAFE85A254252A500FAB11C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFE859254252A500FAB11C /* UIImageView.swift */; };
+		1DAFE86F2542548700FAB11C /* NavigationViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAFE86E2542548700FAB11C /* NavigationViewModelProtocol.swift */; };
 		1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694C25422052003D0282 /* SceneTransitionType.swift */; };
 		1DED695125422053003D0282 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694D25422053003D0282 /* SceneCoordinator.swift */; };
 		1DED695225422053003D0282 /* SceneCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694E25422053003D0282 /* SceneCoordinatorProtocol.swift */; };
@@ -89,6 +90,7 @@
 		1DAFE852254251EA00FAB11C /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		1DAFE8552542522700FAB11C /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		1DAFE859254252A500FAB11C /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		1DAFE86E2542548700FAB11C /* NavigationViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModelProtocol.swift; sourceTree = "<group>"; };
 		1DED694825421FBC003D0282 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DED694C25422052003D0282 /* SceneTransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTransitionType.swift; sourceTree = "<group>"; };
 		1DED694D25422053003D0282 /* SceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		1D59F8E8254232B50008EB03 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1DAFE86E2542548700FAB11C /* NavigationViewModelProtocol.swift */,
 				1D59F959254247D30008EB03 /* Assembly */,
 				1D59F8E9254232D30008EB03 /* ListViewModel.swift */,
 				1D59F960254249000008EB03 /* ListViewModelProtocol.swift */,
@@ -502,6 +505,7 @@
 				1D59F91425423C670008EB03 /* Constants.swift in Sources */,
 				1D59F940254246710008EB03 /* Reachability+Rx.swift in Sources */,
 				1DED6959254220BC003D0282 /* ViewController.swift in Sources */,
+				1DAFE86F2542548700FAB11C /* NavigationViewModelProtocol.swift in Sources */,
 				1DAFE8562542522700FAB11C /* ReusableView.swift in Sources */,
 				1DAFE853254251EA00FAB11C /* UITableView.swift in Sources */,
 				1DED695225422053003D0282 /* SceneCoordinatorProtocol.swift in Sources */,
