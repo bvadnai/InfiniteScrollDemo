@@ -15,4 +15,5 @@ target 'InfiniteScrollDemo' do
   pod 'SwiftyJSON'
   pod 'Reachability'
   pod 'Swinject'
+  pod 'SnapKit'
 end

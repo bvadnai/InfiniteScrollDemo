@@ -29,6 +29,7 @@ PODS:
   - RxSwiftExt/RxCocoa (5.2.0):
     - RxCocoa (~> 5.0)
     - RxSwiftExt/Core
+  - SnapKit (5.0.1)
   - SwiftLint (0.40.3)
   - SwiftyJSON (5.0.0)
   - Swinject (2.7.1)
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - RxDataSources
   - RxSwift
   - RxSwiftExt
+  - SnapKit
   - SwiftLint
   - SwiftyJSON
   - Swinject
@@ -61,6 +63,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - RxSwiftExt
+    - SnapKit
     - SwiftLint
     - SwiftyJSON
     - Swinject
@@ -78,11 +81,12 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 65f7670dd19da61cd8cda22ce6774896c72e4799
+PODFILE CHECKSUM: bfa7cfb60557d87b10b135dc79f7a13826b0e557
 
 COCOAPODS: 1.10.0
