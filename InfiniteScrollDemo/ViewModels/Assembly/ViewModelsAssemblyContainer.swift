@@ -13,5 +13,8 @@ final class ViewModelsAssemblyContainer: Assembly {
         container.register(ListViewModelProtocol.self) { resolver in
             ListViewModel(repositoriesService: resolver.resolve(RepositoriesServiceProtocol.self)!)
         }
+        container.register(DetailsViewModelProtocol.self) { (_, repository: Repository) in
+            DetailsViewModel(repository: repository)
+        }
     }
 }

@@ -12,4 +12,5 @@ import Action
 protocol ListViewModelProtocol: class {
     var list: BehaviorSubject<[Repository]> { get }
     var loadMoreReposAction: Action<Void, [Repository]> { get }
+    var showDetailsAction: Action<Repository, Void> { get }
 }

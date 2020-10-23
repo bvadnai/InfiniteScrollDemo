@@ -50,5 +50,8 @@ final class ListViewController: UIViewController, BindableType {
             .throttle(.milliseconds(6100), scheduler: MainScheduler.instance)
             .subscribe(viewModel.loadMoreReposAction.inputs)
             .disposed(by: rx.disposeBag)
+        tableView.rx.modelSelected(Repository.self)
+            .subscribe(viewModel.showDetailsAction.inputs)
+            .disposed(by: rx.disposeBag)
     }
 }

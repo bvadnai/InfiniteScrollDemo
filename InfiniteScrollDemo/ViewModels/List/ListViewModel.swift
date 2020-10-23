@@ -61,4 +61,14 @@ final class ListViewModel: ListViewModelProtocol, HasDisposeBag {
                 .observeOn(MainScheduler.instance)
         }
     }()
+
+    private(set) lazy var showDetailsAction: Action<Repository, Void> = {
+        Action { repository in
+            return sharedApplication.coordinator
+                .transition(to: .details(repository), type: .push, animated: true)
+                .asObservable()
+                .debug()
+                .map { _ in }
+        }
+    }()
 }
