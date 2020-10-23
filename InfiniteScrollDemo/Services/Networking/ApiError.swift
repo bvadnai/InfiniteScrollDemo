@@ -12,6 +12,7 @@ enum ApiError: Error {
     case requestFailure(String)
     case badResponseFormat
     case unauthorized
+    case notFound
 }
 
 extension ApiError: LocalizedError {
@@ -25,6 +26,8 @@ extension ApiError: LocalizedError {
             return "Invalid credentials."
         case .badResponseFormat:
             return "Error communicating with the server."
+        case .notFound:
+            return "Repository not found."
         }
     }
 }

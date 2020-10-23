@@ -11,7 +11,7 @@ import Moya
 private let accessToken = "***REMOVED***"
 
 enum GitHubSearch {
-    case repositories(page: Int, perPage: Int)
+    case repositories(query: String, sort: String, order: String, page: Int, perPage: Int)
 }
 
 extension GitHubSearch: TargetType {
@@ -30,14 +30,18 @@ extension GitHubSearch: TargetType {
     }
     var sampleData: Data { return "Sample data".data(using: String.Encoding.utf8)! }
     var task: Task {
+        var params = [String: Any]()
+        params[ServerKey.accessToken] = accessToken
         switch self {
-        case .repositories(page: let page, perPage: let perPage):
-            let params: [String: Any] = [
-                ServerKey.page: page,
-                ServerKey.perPage: perPage
-            ]
-            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        case .repositories(query: let query, sort: let sort, order: let order, page: let page, perPage: let perPage):
+            params[ServerKey.query] = query
+            params[ServerKey.sort] = sort
+            params[ServerKey.order] = order
+            params[ServerKey.page] = page
+            params[ServerKey.perPage] = perPage
         }
+
+        return .requestParameters(parameters: params, encoding: CustomParameterEncoding.default)
     }
     var headers: [String: String]? { return nil }
 }

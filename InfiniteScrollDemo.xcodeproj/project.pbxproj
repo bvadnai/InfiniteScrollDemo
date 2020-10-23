@@ -23,6 +23,7 @@
 		1D59F92125423D260008EB03 /* MoyaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92025423D260008EB03 /* MoyaEndpoint.swift */; };
 		1D59F92425423D4D0008EB03 /* ReachabilityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92325423D4D0008EB03 /* ReachabilityType.swift */; };
 		1D59F92925423DA70008EB03 /* RepositoriesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */; };
+		1D59F92D254241250008EB03 /* CustomParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92C254241250008EB03 /* CustomParameterEncoding.swift */; };
 		1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D41A7254218D0002A7105 /* AppDelegate.swift */; };
 		1D5D41B1254218D2002A7105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D41B0254218D2002A7105 /* Assets.xcassets */; };
 		1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694C25422052003D0282 /* SceneTransitionType.swift */; };
@@ -54,6 +55,7 @@
 		1D59F92025423D260008EB03 /* MoyaEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaEndpoint.swift; sourceTree = "<group>"; };
 		1D59F92325423D4D0008EB03 /* ReachabilityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityType.swift; sourceTree = "<group>"; };
 		1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesServiceProtocol.swift; sourceTree = "<group>"; };
+		1D59F92C254241250008EB03 /* CustomParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParameterEncoding.swift; sourceTree = "<group>"; };
 		1D5D41A4254218D0002A7105 /* InfiniteScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5D41A7254218D0002A7105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5D41B0254218D2002A7105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				1D59F91C25423D000008EB03 /* GitHubSearch.swift */,
 				1D59F92025423D260008EB03 /* MoyaEndpoint.swift */,
+				1D59F92C254241250008EB03 /* CustomParameterEncoding.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				1D59F92925423DA70008EB03 /* RepositoriesServiceProtocol.swift in Sources */,
 				1D59F90B25423AC40008EB03 /* MoyaProvider+Rx.swift in Sources */,
 				1DED695125422053003D0282 /* SceneCoordinator.swift in Sources */,
+				1D59F92D254241250008EB03 /* CustomParameterEncoding.swift in Sources */,
 				1D59F8F9254239B20008EB03 /* UINavigationController+Rx.swift in Sources */,
 				1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */,
 				1DED695C254220F3003D0282 /* NavigationController.swift in Sources */,
