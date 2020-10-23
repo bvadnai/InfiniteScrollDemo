@@ -7,4 +7,4 @@
 
 import Foundation
 
-struct ListViewModel {}
+struct ListViewModel: ListViewModelProtocol {}

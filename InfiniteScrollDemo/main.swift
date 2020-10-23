@@ -12,6 +12,6 @@ import NSObject_Rx
 UIApplicationMain(
     CommandLine.argc,
     CommandLine.unsafeArgv,
-    nil,
+    NSStringFromClass(Application.self),
     NSStringFromClass(AppDelegate.self)
 )

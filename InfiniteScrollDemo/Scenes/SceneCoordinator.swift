@@ -16,7 +16,9 @@ enum CoordinatorError: Error {
 final class SceneCoordinator: SceneCoordinatorProtocol {
     // MARK: - Properties
 
-    private var window: UIWindow
+    private lazy var window = UIWindow(frame: UIScreen.main.bounds).then {
+        $0.makeKeyAndVisible()
+    }
     private var currentViewController: UIViewController?
 
     // MARK: - Static functions
@@ -26,12 +28,6 @@ final class SceneCoordinator: SceneCoordinatorProtocol {
             return navigationController.viewControllers.first ?? viewController
         }
         return viewController
-    }
-
-    // MARK: - Initialization
-
-    required init(window: UIWindow) {
-        self.window = window
     }
 
     // MARK: - ScreenCoordinatorProtocol

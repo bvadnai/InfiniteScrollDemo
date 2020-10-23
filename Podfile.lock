@@ -31,6 +31,7 @@ PODS:
     - RxSwiftExt/Core
   - SwiftLint (0.40.3)
   - SwiftyJSON (5.0.0)
+  - Swinject (2.7.1)
   - Then (2.7.0)
 
 DEPENDENCIES:
@@ -44,6 +45,7 @@ DEPENDENCIES:
   - RxSwiftExt
   - SwiftLint
   - SwiftyJSON
+  - Swinject
   - Then
 
 SPEC REPOS:
@@ -61,6 +63,7 @@ SPEC REPOS:
     - RxSwiftExt
     - SwiftLint
     - SwiftyJSON
+    - Swinject
     - Then
 
 SPEC CHECKSUMS:
@@ -77,8 +80,9 @@ SPEC CHECKSUMS:
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 923ccd7391afe3cb09b8ba552b15a33f8f60c4d9
+PODFILE CHECKSUM: 65f7670dd19da61cd8cda22ce6774896c72e4799
 
 COCOAPODS: 1.10.0

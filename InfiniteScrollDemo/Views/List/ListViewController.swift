@@ -10,8 +10,8 @@ import UIKit
 final class ListViewController: UIViewController, BindableType {
     // MARK: - Properties
 
-    typealias ViewModelType = ListViewModel
-    var viewModel: ListViewModel!
+    typealias ViewModelType = ListViewModelProtocol
+    var viewModel: ListViewModelProtocol!
 
     // MARK: - UIViewController
 

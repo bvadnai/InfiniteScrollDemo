@@ -25,6 +25,12 @@
 		1D59F92925423DA70008EB03 /* RepositoriesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */; };
 		1D59F92D254241250008EB03 /* CustomParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F92C254241250008EB03 /* CustomParameterEncoding.swift */; };
 		1D59F940254246710008EB03 /* Reachability+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F93F254246710008EB03 /* Reachability+Rx.swift */; };
+		1D59F954254247240008EB03 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F953254247240008EB03 /* Application.swift */; };
+		1D59F95B254247E80008EB03 /* ScenesAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F95A254247E80008EB03 /* ScenesAssemblyContainer.swift */; };
+		1D59F95E254248AD0008EB03 /* ViewModelsAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F95D254248AD0008EB03 /* ViewModelsAssemblyContainer.swift */; };
+		1D59F961254249000008EB03 /* ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F960254249000008EB03 /* ListViewModelProtocol.swift */; };
+		1D59F964254249650008EB03 /* ServicesAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F963254249650008EB03 /* ServicesAssemblyContainer.swift */; };
+		1D59F967254249900008EB03 /* DefaultReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59F966254249900008EB03 /* DefaultReachability.swift */; };
 		1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D41A7254218D0002A7105 /* AppDelegate.swift */; };
 		1D5D41B1254218D2002A7105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D41B0254218D2002A7105 /* Assets.xcassets */; };
 		1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED694C25422052003D0282 /* SceneTransitionType.swift */; };
@@ -58,6 +64,12 @@
 		1D59F92825423DA70008EB03 /* RepositoriesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesServiceProtocol.swift; sourceTree = "<group>"; };
 		1D59F92C254241250008EB03 /* CustomParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParameterEncoding.swift; sourceTree = "<group>"; };
 		1D59F93F254246710008EB03 /* Reachability+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reachability+Rx.swift"; sourceTree = "<group>"; };
+		1D59F953254247240008EB03 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		1D59F95A254247E80008EB03 /* ScenesAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenesAssemblyContainer.swift; sourceTree = "<group>"; };
+		1D59F95D254248AD0008EB03 /* ViewModelsAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsAssemblyContainer.swift; sourceTree = "<group>"; };
+		1D59F960254249000008EB03 /* ListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelProtocol.swift; sourceTree = "<group>"; };
+		1D59F963254249650008EB03 /* ServicesAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssemblyContainer.swift; sourceTree = "<group>"; };
+		1D59F966254249900008EB03 /* DefaultReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReachability.swift; sourceTree = "<group>"; };
 		1D5D41A4254218D0002A7105 /* InfiniteScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5D41A7254218D0002A7105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D5D41B0254218D2002A7105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,7 +120,9 @@
 		1D59F8E8254232B50008EB03 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1D59F959254247D30008EB03 /* Assembly */,
 				1D59F8E9254232D30008EB03 /* ListViewModel.swift */,
+				1D59F960254249000008EB03 /* ListViewModelProtocol.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -125,6 +139,7 @@
 		1D59F91625423C980008EB03 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1D59F957254247A80008EB03 /* Assembly */,
 				1D59F91725423CAF0008EB03 /* Networking */,
 			);
 			path = Services;
@@ -147,8 +162,33 @@
 				1D59F91C25423D000008EB03 /* GitHubSearch.swift */,
 				1D59F92025423D260008EB03 /* MoyaEndpoint.swift */,
 				1D59F92C254241250008EB03 /* CustomParameterEncoding.swift */,
+				1D59F966254249900008EB03 /* DefaultReachability.swift */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		1D59F957254247A80008EB03 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1D59F963254249650008EB03 /* ServicesAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1D59F958254247BD0008EB03 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1D59F95A254247E80008EB03 /* ScenesAssemblyContainer.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1D59F959254247D30008EB03 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1D59F95D254248AD0008EB03 /* ViewModelsAssemblyContainer.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		1D5D419B254218D0002A7105 = {
@@ -173,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				1DED695E2542214D003D0282 /* main.swift */,
+				1D59F953254247240008EB03 /* Application.swift */,
 				1D5D41A7254218D0002A7105 /* AppDelegate.swift */,
 				1DED694B25422025003D0282 /* Scenes */,
 				1DED69562542209F003D0282 /* Views */,
@@ -198,6 +239,7 @@
 		1DED694B25422025003D0282 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1D59F958254247BD0008EB03 /* Assembly */,
 				1DED694F25422053003D0282 /* Scene.swift */,
 				1DED694D25422053003D0282 /* SceneCoordinator.swift */,
 				1DED694E25422053003D0282 /* SceneCoordinatorProtocol.swift */,
@@ -397,18 +439,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D59F92925423DA70008EB03 /* RepositoriesServiceProtocol.swift in Sources */,
+				1D59F964254249650008EB03 /* ServicesAssemblyContainer.swift in Sources */,
 				1D59F90B25423AC40008EB03 /* MoyaProvider+Rx.swift in Sources */,
+				1D59F967254249900008EB03 /* DefaultReachability.swift in Sources */,
 				1DED695125422053003D0282 /* SceneCoordinator.swift in Sources */,
 				1D59F92D254241250008EB03 /* CustomParameterEncoding.swift in Sources */,
 				1D59F8F9254239B20008EB03 /* UINavigationController+Rx.swift in Sources */,
 				1D5D41A8254218D0002A7105 /* AppDelegate.swift in Sources */,
+				1D59F95E254248AD0008EB03 /* ViewModelsAssemblyContainer.swift in Sources */,
 				1DED695C254220F3003D0282 /* NavigationController.swift in Sources */,
 				1DED696A254222B7003D0282 /* DispatchQueue.swift in Sources */,
+				1D59F954254247240008EB03 /* Application.swift in Sources */,
 				1DED6963254221E3003D0282 /* ListViewController.swift in Sources */,
 				1DED695325422053003D0282 /* Scene.swift in Sources */,
 				1DED695F2542214D003D0282 /* main.swift in Sources */,
 				1D59F8CE25422E8E0008EB03 /* UIColor.swift in Sources */,
 				1DED695025422053003D0282 /* SceneTransitionType.swift in Sources */,
+				1D59F961254249000008EB03 /* ListViewModelProtocol.swift in Sources */,
 				1D59F8EA254232D30008EB03 /* ListViewModel.swift in Sources */,
 				1D59F8F52542395B0008EB03 /* Logger.swift in Sources */,
 				1D59F90E25423B000008EB03 /* Observable+Response.swift in Sources */,
@@ -423,6 +470,7 @@
 				1D59F91D25423D000008EB03 /* GitHubSearch.swift in Sources */,
 				1D59F91125423B160008EB03 /* Single+Response.swift in Sources */,
 				1D59F92125423D260008EB03 /* MoyaEndpoint.swift in Sources */,
+				1D59F95B254247E80008EB03 /* ScenesAssemblyContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

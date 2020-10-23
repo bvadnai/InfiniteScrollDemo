@@ -8,17 +8,19 @@
 import UIKit
 
 enum Scene {
-    case list(ListViewModel)
+    case list
 }
 
 // View(controller) factory
+
 extension Scene {
     func createViewController(asNavigationRoot: Bool) -> UIViewController {
         var viewController: UIViewController
         switch self {
-        case .list(let viewModel):
+        case .list:
             viewController = ListViewController()
             if var listViewController = viewController as? ListViewController {
+                let viewModel = sharedApplication.assembler.resolver.resolve(ListViewModelProtocol.self)!
                 listViewController.bindViewModel(to: viewModel)
             }
         }
