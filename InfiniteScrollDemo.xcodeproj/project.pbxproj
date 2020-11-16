@@ -44,7 +44,6 @@
 				D5E3DBBA74EF28677E1F8AF8 /* Pods-InfiniteScrollDemo.debug.xcconfig */,
 				9D453B4E91DBADF847678376 /* Pods-InfiniteScrollDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +101,7 @@
 			buildConfigurationList = 1DC7945125621D1A00E53F2D /* Build configuration list for PBXNativeTarget "InfiniteScrollDemo" */;
 			buildPhases = (
 				56EB1B39F8B1A36C8FACF959 /* [CP] Check Pods Manifest.lock */,
+				1D434C2925621FE9005FD29D /* SwiftLint */,
 				1DC7943E25621D1A00E53F2D /* Sources */,
 				1DC7943F25621D1A00E53F2D /* Frameworks */,
 				1DC7944025621D1A00E53F2D /* Resources */,
@@ -160,6 +160,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D434C2925621FE9005FD29D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		56EB1B39F8B1A36C8FACF959 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
